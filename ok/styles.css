@@ -1,0 +1,107 @@
+/* General Body Styling */
+body {
+  font-family: 'Arial', sans-serif;
+  margin: 0;
+  padding: 0;
+  background-image: url('images/anime-moon-landscape_23-2151645909.jpg'); /* Path to your image */
+  background-size: cover; /* Ensures the image covers the entire background */
+  background-position: center center; /* Centers the image */
+  color: white;
+  text-align: center;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+  box-sizing: border-box;
+  animation: fadeIn 2s ease-out; /* Add fade-in animation */
+}
+
+/* Page Title */
+h1 {
+  font-size: 2.5em;
+  margin-bottom: 20px;
+  letter-spacing: 2px;
+  color: #fff;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.6); /* Adds shadow to text */
+  text-transform: uppercase;
+  animation: slideIn 1.5s ease-out; /* Animation for title */
+}
+
+/* Textarea Styling */
+textarea {
+  width: 80%;
+  height: 150px;
+  padding: 15px;
+  font-size: 18px;
+  border-radius: 10px;
+  border: 2px solid #fff;
+  margin-top: 20px;
+  background-color: rgba(255, 255, 255, 0.2);
+  color: white;
+  resize: none;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+  transition: 0.3s ease-in-out;
+}
+
+textarea:focus {
+  background-color: rgba(255, 255, 255, 0.4);
+  outline: none;
+  box-shadow: 0 0 15px rgba(0, 255, 255, 0.5);
+}
+
+/* Button Styling */
+button {
+  background-color: #2575fc;
+  color: white;
+  padding: 15px 30px;
+  border: none;
+  border-radius: 50px;
+  font-size: 1.1em;
+  cursor: pointer;
+  margin-top: 20px;
+  transition: 0.3s ease;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+}
+
+button:hover {
+  background-color: #6a11cb;
+  transform: scale(1.05); /* Slightly enlarge the button on hover */
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.4);
+}
+
+/* Summary Box Styling */
+#summarized-text {
+  margin-top: 30px;
+  padding: 20px;
+  border-radius: 15px;
+  background: rgba(0, 0, 0, 0.7); /* Dark background for summary */
+  width: 80%;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.6);
+  transition: transform 0.3s ease;
+}
+
+#summarized-text:hover {
+  transform: scale(1.02); /* Add a hover effect to the summary box */
+}
+
+/* Add animation for fading in the summary */
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+/* Animation for sliding in the title */
+@keyframes slideIn {
+  0% {
+    transform: translateY(-100%);
+  }
+  100% {
+    transform: translateY(0);
+  }
+}
